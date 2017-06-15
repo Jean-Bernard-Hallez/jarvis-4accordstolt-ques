@@ -1,0 +1,8 @@
+*PREMIER*TOLTEQ*==jv_pg_ct_pre_accord
+*SECOND*TOLTEQ*==jv_pg_ct_sec_accord
+*TROISIEME*TOLTEQ*==jv_pg_ct_tro_accord
+*QUATRIEME*TOLTEQ*==jv_pg_ct_qua_accord
+*ACCORD*TOL*==say "Prononcer l'un de ces premiers mot:"; jv_pg_ct_4accord_que_faire
+>(*)==jv_pg_ct_4accord_que_faire_suite; if [ "$REFAITUNTOURACCORD" = "1" ]; then REFAITUNTOURACCORD=""; commands="$(jv_get_commands)"; jv_handle_order "quatre accords toltèques"; return; fi
+
+
